@@ -59,7 +59,8 @@ let jokeArray = {
 }
 
 const getRandomJoke = () => {
-	let num = Math.floor((Math.random() * jokeArray.q.length) + 1);
+	let num = Math.floor((Math.random() * jokeArray.q.length));
+	console.log("Random Number: " + num);
 	let question = jokeArray.q[num];
 	let answer = jokeArray.a[num];
 	const responseObj = {
